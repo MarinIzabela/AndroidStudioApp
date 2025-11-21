@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EditText</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string-array name="countries">
+        <item>England</item>
+        <item>Romania</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Greece</item>
+    </string-array>
+</resources>

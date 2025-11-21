@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#635CA6A6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Please_enter_your_name"
+        android:inputType="text"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="OK"
+        android:textColor="@color/black"
+        android:textColorLink="#18F8F5F5" />
+
+    <ImageView
+        android:id="@+id/imageExample"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="329dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:text="What is your gender?" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Male" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFemale"
+        android:layout_width="93dp"
+        android:layout_height="68dp"
+        android:text="Female" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Green"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButtonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="Hide Image"
+        android:textOn="Show Image" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a country" />
+
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
