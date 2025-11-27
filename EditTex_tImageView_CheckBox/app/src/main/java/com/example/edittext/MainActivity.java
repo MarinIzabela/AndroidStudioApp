@@ -16,6 +16,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +25,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,6 +81,12 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);//assign spinner to the adaptor
 
+        ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"This is a toast message!!",Toast.LENGTH_LONG).show();
+            }
+        });
 
         male.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,8 +127,15 @@ public class MainActivity extends AppCompatActivity {
                 } else if (yellow.isChecked()) {
                     layout.setBackgroundColor(Color.YELLOW);
                 }
+                // Toast message
+               // Toast.makeText(getApplicationContext(),"This is a toast message!!",Toast.LENGTH_LONG).show();
+                //SnackBarMessge
+                Snackbar.make(layout, "This is a SnackBar message!" , Snackbar.LENGTH_INDEFINITE).setAction(" Close", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-
+                    }
+                }).show();
             }
         });
 
