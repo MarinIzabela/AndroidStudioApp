@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <EditText
+        android:id="@+id/editTextNume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:ems="10"
+        android:hint="Introduceti nume student"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="365dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Introduceti Data Nasterii"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMedia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNume" />
+
+    <EditText
+        android:id="@+id/editTextMedia"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Introduceti media"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFaculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextData"
+        app:layout_constraintVertical_bias="0.348" />
+
+    <TextView
+        android:id="@+id/textViewFi"
+        android:layout_width="192dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="37dp"
+        android:text="Forma Invatamant:"
+        app:layout_constraintBottom_toTopOf="@+id/radioGrup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFaculate" />
+
+    <TextView
+        android:id="@+id/textViewFaculate"
+        android:layout_width="167dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="11dp"
+        android:text="Facultate"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMedia" />
+
+    <RadioGroup
+        android:id="@+id/radioGrup"
+        android:layout_width="409dp"
+        android:layout_height="86dp"
+        android:checkedButton="@id/radioButtonID"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFi">
+
+        <RadioButton
+            android:id="@+id/radioButtonIF"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="IF" />
+
+        <RadioButton
+            android:id="@+id/radioButtonID"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAS"
+        android:layout_width="250dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="115dp"
+        android:text="Adauga Student"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
